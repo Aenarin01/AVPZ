@@ -3,10 +3,10 @@ const controller = require('../controllers/auth')
 const upload = require('../middleware/upload')
 const router = express.Router()
 
-// localhost:5000/api/auth/login
+// localhost:6000/api/auth/login
 router.post('/login', controller.login)
 
-// localhost:5000/api/auth/register
+// localhost:6000/api/auth/register
 router.post('/register', upload.single('image'), controller.register)
 
 
