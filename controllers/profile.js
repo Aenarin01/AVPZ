@@ -15,6 +15,8 @@ module.exports.update = async function(req, res) {
         name: req.body.name,
         age: req.body.age,
         weight: req.body.weight,
+        email: req.body.email,
+        password: req.body.password,
     }
 
     if (req.file) {
