@@ -38,7 +38,9 @@ module.exports.create = async function(req, res) {
     const workout = new Workout({
         title: req.body.title,
         user: req.user.id,
-        repeatTime: req.body.repeatTime,
+        repeatCount: req.body.repeatCount,
+        timeWorkout: req.body.timeWorkout,
+        setCount: req.body.setCount,
         weightEquip: req.body.weightEquip,
         restTime: req.body.restTime
     })
@@ -55,7 +57,10 @@ module.exports.update = async function(req, res) {
 
     const updated = {
         title: req.body.title,
-        repeatTime: req.body.repeatTime,
+        user: req.user.id,
+        repeatCount: req.body.repeatCount,
+        timeWorkout: req.body.timeWorkout,
+        setCount: req.body.setCount,
         weightEquip: req.body.weightEquip,
         restTime: req.body.restTime
     }
