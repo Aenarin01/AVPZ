@@ -30,7 +30,7 @@ module.exports.update = async function(req, res) {
             {new: true}
         )
         res.status(200).json(user)
-    } catch (e) {
+    } catch (e) {+
         errorHandler(res, e)
     }
 }

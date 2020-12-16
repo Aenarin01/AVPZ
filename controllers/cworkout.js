@@ -37,7 +37,9 @@ module.exports.remove = async function(req, res) {
 module.exports.create = async function(req, res) {
     const cworkout = new CWorkout({
         title: req.body.title,
-        repeatTime: req.body.repeatTime,
+        repeatCount: req.body.repeatCount,
+        timeWorkout: req.body.timeWorkout,
+        setCount: req.body.setCount,
         weightEquip: req.body.weightEquip,
         restTime: req.body.restTime
     })
@@ -54,7 +56,9 @@ module.exports.update = async function(req, res) {
 
     const updated = {
         title: req.body.title,
-        repeatTime: req.body.repeatTime,
+        repeatCount: req.body.repeatCount,
+        timeWorkout: req.body.timeWorkout,
+        setCount: req.body.setCount,
         weightEquip: req.body.weightEquip,
         restTime: req.body.restTime
     }

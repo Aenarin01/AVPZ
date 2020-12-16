@@ -6,7 +6,13 @@ const comworkoutSchema = new Schema({
         type: String,
         unique: true
     },
-    repeatTime: {
+    repeatCount: {
+        type: String,
+    },
+    timeWorkout: {
+        type: String,
+    },
+    setCount: {
         type: String,
     },
     weightEquip: {
